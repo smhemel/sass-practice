@@ -1,0 +1,111 @@
+.chart__box {
+    background-color: $color-background;
+    width: 30rem;
+    height: 16rem;
+    margin: 0 23px 23px 0;
+
+    &__grow {
+        flex: 1;
+    }
+
+    &__1 {
+        display: flex;
+        margin-top: 1.4rem;
+
+        .bitcoin-logo {
+            height: 4.4rem;
+            margin: 0 12px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            padding-top: 3px;
+
+            &__heading {
+                display: flex;
+                width: 222px;
+                color: $color-text;
+                line-height: 1.6rem;
+                letter-spacing: 0.25px;
+                font-size: 1.4rem;
+                justify-content: space-between;
+                .currency {
+                    span {
+                        display: block;
+                        &:not(:last-child) {
+                            margin-bottom: 4px;
+                        }
+                    }
+                }
+            }
+
+            &__details {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+
+                & > * {
+                    color: $color-nav-text;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    letter-spacing: .5px;
+
+                    margin-top: 1rem;
+                }
+                .balance {
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    &__2,
+    &__3,
+    &__4 {
+        display: flex;
+        flex-direction: column;
+        color: $color-text;
+        
+        .heading {
+            display: flex;
+            margin-top: 1.4rem;
+
+            &__logo {
+                height: 4.2rem;
+                width: 4.2rem;
+                margin: 0 12px;
+            }
+
+            h3 {
+                margin-top: 5px;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            letter-spacing: 0.5px;
+            padding-top: 3rem;
+        }
+
+        .call-details {
+            display: flex;
+            margin-left: 65px;
+
+            &__instruction {
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                letter-spacing: 0.5px;
+                color: $color-text;
+            }
+        }
+    }
+
+}

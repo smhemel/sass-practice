@@ -1,0 +1,51 @@
+.side-nav {
+    font-size: 1.6rem;
+    list-style: none;
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        position: relative;
+
+        &__grow {
+            margin-top: 130px;
+        }
+    }
+    
+    &__underline {
+        border-bottom: 1px solid $color-background;
+        margin-left: 5.5rem;
+        padding-bottom: .6rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.5px;
+        color: $color-nav-text;
+        display: block;
+        padding: .6rem 0 0 1.5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1.8rem;
+
+    }
+    
+}
+
+// font-size: 16px;
+// line-height: 19px;
+// /* identical to box height */
+
+// letter-spacing: 0.5px;
+
+// color: #7D8186;

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff; }
+
+.header {
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px; }
+  .header .logo {
+    color: #292929; }
+  .header__name {
+    display: inline-block;
+    margin-left: 10px; }
+    .header__name span {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      line-height: 2.8;
+      letter-spacing: 0.25px; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: #fff;
+  flex: 0 0 18%;
+  box-shadow: 1rem 0 0.5rem -0.2rem #edf2f8;
+  height: 90vh;
+  margin-top: -2px; }
+
+.details {
+  margin: 35px 120px 0 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+.chart {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px; }
+  .chart::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.side-nav {
+  font-size: 1.6rem;
+  list-style: none;
+  margin-top: .8rem;
+  display: flex;
+  flex-direction: column; }
+  .side-nav__item {
+    position: relative; }
+    .side-nav__item__grow {
+      margin-top: 130px; }
+  .side-nav__underline {
+    border-bottom: 1px solid #EDF2F8;
+    margin-left: 5.5rem;
+    padding-bottom: .6rem; }
+  .side-nav__link:link, .side-nav__link:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.5px;
+    color: #7D8186;
+    display: block;
+    padding: .6rem 0 0 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center; }
+  .side-nav__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.8rem; }
+
+.menu {
+  border-bottom: 1.5px solid #EDF2F8; }
+  .menu .menu-bar {
+    display: flex;
+    list-style: none;
+    align-items: center; }
+    .menu .menu-bar__close {
+      margin-left: auto; }
+    .menu .menu-bar__item:not(:last-child) {
+      margin-right: 2.5rem; }
+    .menu .menu-bar__link:link, .menu .menu-bar__link:visited {
+      text-decoration: none;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      letter-spacing: 0.5px;
+      color: #7D8186; }
+    .menu .menu-bar__link:hover, .menu .menu-bar__link:focus, .menu .menu-bar__link--active {
+      padding-bottom: 4px;
+      color: #015BD9;
+      border-bottom: 3px solid #015BD9; }
+
+.chart__box {
+  background-color: #EDF2F8;
+  width: 30rem;
+  height: 16rem;
+  margin: 0 23px 23px 0; }
+  .chart__box__grow {
+    flex: 1; }
+  .chart__box__1 {
+    display: flex;
+    margin-top: 1.4rem; }
+    .chart__box__1 .bitcoin-logo {
+      height: 4.4rem;
+      margin: 0 12px; }
+    .chart__box__1__info {
+      display: flex;
+      flex-direction: column;
+      padding-top: 3px; }
+      .chart__box__1__info__heading {
+        display: flex;
+        width: 222px;
+        color: #585C60;
+        line-height: 1.6rem;
+        letter-spacing: 0.25px;
+        font-size: 1.4rem;
+        justify-content: space-between; }
+        .chart__box__1__info__heading .currency span {
+          display: block; }
+          .chart__box__1__info__heading .currency span:not(:last-child) {
+            margin-bottom: 4px; }
+      .chart__box__1__info__details {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem; }
+        .chart__box__1__info__details > * {
+          color: #7D8186;
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          letter-spacing: .5px;
+          margin-top: 1rem; }
+        .chart__box__1__info__details .balance {
+          display: flex;
+          justify-content: space-between; }
+  .chart__box__2, .chart__box__3, .chart__box__4 {
+    display: flex;
+    flex-direction: column;
+    color: #585C60; }
+    .chart__box__2 .heading, .chart__box__3 .heading, .chart__box__4 .heading {
+      display: flex;
+      margin-top: 1.4rem; }
+      .chart__box__2 .heading__logo, .chart__box__3 .heading__logo, .chart__box__4 .heading__logo {
+        height: 4.2rem;
+        width: 4.2rem;
+        margin: 0 12px; }
+      .chart__box__2 .heading h3, .chart__box__3 .heading h3, .chart__box__4 .heading h3 {
+        margin-top: 5px;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.5px; }
+    .chart__box__2 .features, .chart__box__3 .features, .chart__box__4 .features {
+      display: flex;
+      justify-content: center;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      letter-spacing: 0.5px;
+      padding-top: 3rem; }
+    .chart__box__2 .call-details, .chart__box__3 .call-details, .chart__box__4 .call-details {
+      display: flex;
+      margin-left: 65px; }
+      .chart__box__2 .call-details__instruction, .chart__box__3 .call-details__instruction, .chart__box__4 .call-details__instruction {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        letter-spacing: 0.5px;
+        color: #585C60; }

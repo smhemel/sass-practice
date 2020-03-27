@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: $color-white;
+    flex: 0 0 18%;
+    box-shadow: 1rem 0 .5rem -.2rem rgba($color-background, 2.0);
+    height: 90vh;
+    margin-top: -2px;
+}
