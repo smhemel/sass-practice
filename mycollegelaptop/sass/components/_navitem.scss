@@ -1,0 +1,27 @@
+nav {
+
+    .logo {
+        height: 50px;
+    }
+    .nav-link {
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        color: $color-primary-text;
+
+        .active {
+            color: $color-hover-text;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-hover-text;
+        }
+    }
+
+    .navbar-toggler-icon {
+        color: $color-primary-dark-1;
+        font-size: xx-large;
+        padding-top: 1rem;
+    }
+}

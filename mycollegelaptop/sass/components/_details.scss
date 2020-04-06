@@ -1,0 +1,36 @@
+.details-section {
+    h2 {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        margin: 18px 0;
+        color: $color-primary-dark-2;
+    }
+    .lead {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: $color-primary-dark-2;
+        font-weight: 400;
+    }
+
+    .approach {
+        width: 100%;
+        background: #F7F7F7;
+    }
+    
+    .approach .info .lead .vision {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: #444444;
+    }
+    
+    .approach .discussion-img {
+        width: 100%;
+        height: auto;
+        margin: 20px 20px 20px 0;
+    }
+    .approach .play-btn {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+    }
+}

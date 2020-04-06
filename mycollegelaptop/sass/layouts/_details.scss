@@ -1,0 +1,16 @@
+.details-section {
+    margin: 0 auto;
+
+    .cover {
+        width: 100%;
+    }
+
+    .right-place {
+        width: 100%;
+        margin-top: -367px;
+
+        @include respond(tab-land) {
+            margin-top: 10px;
+        }
+    }
+}

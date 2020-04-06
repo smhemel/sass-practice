@@ -1,0 +1,51 @@
+.office-location {
+
+    background: #F7F7F7;
+    height: 370px;
+    mix-blend-mode: multiply;
+
+    img {
+        width: 85%;
+        height: auto;
+        z-index: -1111;
+        position: absolute;
+        align-self: center;
+    }
+
+    .location {
+
+
+        .box {
+            width: 81px;
+            height: 48px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 5px rgba(148, 148, 148, 0.5);
+        }
+        .box1 {
+            margin: 30% 0 0 -10%;
+        }
+        .box2 {
+            margin-top: 56%;
+        }
+        .box3 {
+            margin: 42% 0 0 8%;
+        }
+        .box4 {
+            margin: 18% 0 0 8%;
+        }
+        .box5 {
+            margin-top: 56%;
+        }
+
+        @include respond(phone) {
+            margin-top: 15%;
+            .box {
+                width: 50px;
+                height: 35px;
+            }
+            
+        }
+
+    }
+    
+}
